@@ -2,13 +2,14 @@
   "name": "@metricvis/core",
   "version": "1.0.0",
   "main": "./dist/metricvis-core.umd.cjs",
-  "module": "./dist/metricvis-core.js",
+  "module": "./dist/metricvis-core.mjs",
   "types": "./dist/index.d.ts",
-  "exports": {
+"exports": {
     ".": {
-      "import": "./dist/metricvis-core.js",
-      "require": "./dist/metricvis-core.umd.cjs"
-    }
+      "import": "./dist/metricvis-core.mjs",
+      "require": "./dist/metricvis-core.umd.js"
+    },
+    "./dist/metricvis-core.css": "./dist/metricvis-core.css"
   },
   "dependencies": {
     "vue": "^3.5.24"
